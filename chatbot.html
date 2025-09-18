@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAI Chat Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>OpenAI Chat Example</h1>
+    
+    <!-- API Key Section -->
+    <div class="api-key-section">
+        <label for="apiKeyInput">OpenAI API Key:</label>
+        <input type="password" id="apiKeyInput" placeholder="Enter your OpenAI API key (sk-...)" />
+        <button id="saveKey">Save Key</button>
+        <div id="keyStatus" class="key-status" style="display: none;"></div>
+    </div>
+    
+    <!-- Chat Section -->
+    <div id="chat"></div>
+    
+    <!-- Input Section -->
+    <div class="chat-input-section">
+        <input type="text" id="input" placeholder="Type your message here..." disabled />
+        <button id="send" disabled>Send</button>
+    </div>
+</body>
+</html>
